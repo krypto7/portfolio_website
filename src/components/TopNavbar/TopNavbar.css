@@ -1,0 +1,19 @@
+.top_navabr {
+  height: 10vh;
+  background-color: transparent;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vh;
+  overflow: hidden;
+  padding: 0% 10vw;
+}
+.top_navabr img {
+  height: 100%;
+  width: 11vw;
+  object-fit: cover;
+}
+.topbar_Menu p{
+  color: var(--white);
+}

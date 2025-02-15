@@ -1,0 +1,67 @@
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  /* ----------- Navbar --------- */
+  .navbar_mobile {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0;
+    top: 0%;
+    max-width: 100%;
+  }
+  .home_section {
+    padding: 0% 2vh;
+  }
+  .home_content {
+    padding-top: 10vh;
+    flex-direction: column;
+  }
+  .right_container {
+    width: 100%;
+    height: 50vh;
+    gap: 3vh;
+  }
+  .left_container {
+    width: 100%;
+    height: 50vh;
+  }
+  .right_container h1 {
+    width: 81%;
+    max-width: 100%;
+    font-size: 4vh;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .intro_subText {
+    letter-spacing: 0.2vh;
+    font-size: 1.5vh;
+  }
+  .btn_title {
+    font-size: 2vh;
+    white-space: nowrap;
+  }
+  .link_container {
+    padding: 1vh 1vh 1vh 3vh;
+  }
+  .btnIcon_style {
+    height: 5vh;
+    width: 5vh;
+  }
+  .btn_icon {
+    font-size: 3vh;
+  }
+  .sub_text {
+    font-size: 1rem;
+  }
+}
