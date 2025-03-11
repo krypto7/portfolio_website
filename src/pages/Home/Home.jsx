@@ -5,6 +5,8 @@ import GradientCircle from "../../components/GradientCirlcle/GradientCircle";
 import { ImWhatsapp } from "react-icons/im";
 import { CiHeart } from "react-icons/ci";
 import CustomButtons from "../../components/CustomButtons/CustomButtons";
+import img1 from "../../assets/desktop_img1.png";
+// import img2 from "../../assets/mobile_img.JPG";
 
 function Home() {
   return (
@@ -15,7 +17,12 @@ function Home() {
 
       {/* -----------Home------------------- */}
       <div className="home_content">
-        <div className="left_container"></div>
+        <div className="left_container">
+          <div class="image_container">
+            <img src={img1} alt="" srcset="" />
+          </div>
+          {/* <img src={img2} alt="" srcset="" /> */}
+        </div>
         <div className="right_container">
           <p className="intro_subText">
             FRONTEND DEVELOPER & JAVASCRIPT EXPERT

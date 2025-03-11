@@ -31,7 +31,6 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <nav className="navbar_mobile mobile"></nav>
     </>
   );
 }
