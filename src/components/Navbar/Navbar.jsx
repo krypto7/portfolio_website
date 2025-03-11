@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 function Navbar() {
+  const [isClicked, setClicked] = useState(false);
   return (
     <>
       <nav className="navbar desktop">
@@ -29,6 +30,25 @@ function Navbar() {
               <a href="#"></a>
             </li> */}
           </ul>
+        </div>
+      </nav>
+
+      {/* ------------------ mobile-navabr------------- */}
+      <nav className="navbar_mobile mobile">
+        <div>Hello</div>
+        <div onClick={() => setClicked(!isClicked)}>Menu</div>
+        <div
+          className="nav_mobile_menu"
+          style={{ right: isClicked ? "0%" : "-100%" }}
+        >
+          {isClicked && (
+            <ul>
+              <li>Home</li>
+              <li>Work</li>
+              <li>Servies</li>
+              <li>Contact Me</li>
+            </ul>
+          )}
         </div>
       </nav>
     </>

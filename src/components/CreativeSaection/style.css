@@ -5,11 +5,81 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .night h1 {
   color: var(--white);
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 14vh;
   text-align: center;
+}
+
+.circle {
+  height: 50vh;
+  width: 50vh;
+  /* border: 1px solid white; */
+  /* border-style: dashed; */
+  opacity: 0.7;
+  animation: rotate 30s linear infinite;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+}
+
+.circle1 {
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  border: 1px solid white;
+  border-style: dashed;
+  opacity: 0.3;
+  /* animation: rotate 30s linear infinite; */
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+}
+
+.gradient_circle2 {
+  inset: 0% 0% auto auto;
+  opacity: 1.6;
+  filter: blur(180px);
+  margin-top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle2 {
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  border: 1px solid white;
+  border-style: dashed;
+  opacity: 0.3;
+  /* animation: rotate 30s linear infinite; */
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+}
+
+.sub_circle {
+  height: 5vh;
+  width: 5vh;
+  /* background-color: ; */
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  right: -8%;
+  border: 2px solid white;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
 }

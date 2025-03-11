@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .image_container img {
@@ -43,8 +44,8 @@
 }
 
 .image_container {
-  height: 50vh;
-  width: 40vh;
+  height: 100%;
+  width: 60vh;
 }
 
 .right_container {
@@ -118,4 +119,8 @@
   align-items: center;
   background-color: var(--green);
   border-radius: 50%;
+}
+
+.profile_img_mobile {
+  display: none;
 }

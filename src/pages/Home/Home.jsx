@@ -6,20 +6,31 @@ import { ImWhatsapp } from "react-icons/im";
 import { CiHeart } from "react-icons/ci";
 import CustomButtons from "../../components/CustomButtons/CustomButtons";
 import img1 from "../../assets/desktop_img1.png";
-// import img2 from "../../assets/mobile_img.JPG";
+import img2 from "../../assets/mobile_img.png";
 
 function Home() {
   return (
     <div className="home_section">
       <TopNavabar />
       <GradientCircle className={"gradient_circle1"} />
-      <GradientCircle className={"gradient_circle2"} />
+      <GradientCircle className={"gradient_circle2 desktop"} />
 
       {/* -----------Home------------------- */}
       <div className="home_content">
         <div className="left_container">
-          <div class="image_container">
-            <img src={img1} alt="" srcset="" />
+          <div className="image_container">
+            <img
+              className="profile_img_desktop desktop"
+              src={img1}
+              alt="desktop-img"
+              srcset=""
+            />
+            <img
+              className="profile_img_mobile mobile"
+              src={img2}
+              alt="mobile-img"
+              srcset=""
+            />
           </div>
           {/* <img src={img2} alt="" srcset="" /> */}
         </div>

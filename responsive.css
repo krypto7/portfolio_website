@@ -10,6 +10,7 @@
 
   .mobile {
     display: flex;
+    background-color: black;
   }
 
   /* ----------- Navbar --------- */
@@ -29,18 +30,35 @@
     top: 0;
   }
 
-  .nav-mobile-menu {
+  .nav_mobile_menu {
     position: absolute;
-    height: 100vh;
-    background-color: black;
+    /* height: 100vh; */
+    /* background-color: black; */
+    z-index: -1;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    transition: right 0.5s ease;
   }
+
+  .nav_mobile_menu ul {
+    background: red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ---------------- Home -------------------- */
 
   .home_section {
     padding: 0% 2vh;
   }
 
   .home_content {
-    padding-top: 10vh;
+    padding-top: 26vh;
     flex-direction: column;
   }
 
@@ -88,5 +106,13 @@
 
   .sub_text {
     font-size: 1rem;
+  }
+
+  .image_container {
+    width: 100%;
+  }
+
+  .creatice_section h1 {
+    font-size: 2vh;
   }
 }
