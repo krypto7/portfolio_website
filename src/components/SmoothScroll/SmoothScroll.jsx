@@ -1,18 +1,32 @@
-// import ReactLenis from "lenis/react";
-// import React from "react";
+import Lenis from "lenis";
+import React from "react";
+import { useEffect, useRef } from "react";
 
-// function SmoothScroll({ children }) {
-//   const lenisOptions = {
-//     lerp: 0.1, // control how smooth the scroll is
-//     duration: 1.5, // slow down or speed up the scrolling
-//     smoothTouch: false,
-//     smooth: true,
-//   };
-//   return (
-//     <ReactLenis root options={lenisOptions}>
-//       {children}
-//     </ReactLenis>
-//   );
-// }
+function SmoothScroll({ children }) {
+  const lenisRef = useRef(null);
 
-// export default SmoothScroll;
+  useEffect(() => {
+    const lenis = new Lenis({
+      smooth: true,
+      lerp: 0.1, // Adjust for smoothness
+      direction: "vertical",
+      smoothTouch: false, // Enable smooth scrolling on touch devices
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    lenisRef.current = lenis;
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
+  return <div>{children}</div>;
+}
+
+export default SmoothScroll;
