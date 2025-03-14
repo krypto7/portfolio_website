@@ -1,0 +1,17 @@
+.about-me {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.line {
+  height: 100%;
+  width: 1vh;
+  background-color: white;
+}
+
+.about-me li {
+  font-size: 2vh;
+}

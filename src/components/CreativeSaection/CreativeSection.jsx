@@ -1,7 +1,8 @@
 import React from "react";
 import GradientCircle from "../GradientCirlcle/GradientCircle";
-import "./style.css";
+import "./creativeSection.css";
 import { SiGoogleearth } from "react-icons/si";
+import Chips from "../commonComponets/chips/Chips";
 
 function CreativeSection() {
   return (
@@ -20,6 +21,8 @@ function CreativeSection() {
       </div>
       <div className="circle1"></div>
       <div className="circle2"></div>
+
+      <Chips />
     </div>
   );
 }

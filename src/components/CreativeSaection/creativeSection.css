@@ -11,13 +11,15 @@
 .night h1 {
   color: var(--white);
   text-transform: uppercase;
-  font-size: 14vh;
+  font-size: 5rem;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .circle {
-  height: 50vh;
-  width: 50vh;
+  height: 0vh;
+  width: 46vh;
   /* border: 1px solid white; */
   /* border-style: dashed; */
   opacity: 0.7;
@@ -28,8 +30,8 @@
 }
 
 .circle1 {
-  height: 70vh;
-  width: 70vh;
+  height: 50vh;
+  width: 50vh;
   border-radius: 50%;
   border: 1px solid white;
   border-style: dashed;
@@ -51,8 +53,8 @@
 }
 
 .circle2 {
-  height: 40vh;
-  width: 40vh;
+  height: 30vh;
+  width: 30vh;
   border-radius: 50%;
   border: 1px solid white;
   border-style: dashed;
@@ -64,8 +66,8 @@
 }
 
 .sub_circle {
-  height: 5vh;
-  width: 5vh;
+  height: 4vh;
+  width: 4vh;
   /* background-color: ; */
   border-radius: 50%;
   position: absolute;
