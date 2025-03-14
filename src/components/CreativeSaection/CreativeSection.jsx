@@ -8,7 +8,7 @@ import Marquee from "../Marquee/Marquee";
 function CreativeSection() {
   return (
     <div>
-      <div className="creatice_section desktop">
+      <div className="creatice_section">
         <div className="night">
           <h1>
             Experienced <br /> Web-Developer
