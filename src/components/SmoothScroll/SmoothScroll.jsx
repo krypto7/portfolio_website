@@ -1,3 +1,4 @@
+import React from "react";
 import { ReactLenis } from "lenis/react";
 
 function SmoothScrolling({ children }) {
