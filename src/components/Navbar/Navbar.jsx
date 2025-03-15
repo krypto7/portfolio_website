@@ -3,6 +3,15 @@ import "./style.css";
 
 function Navbar() {
   const [isClicked, setClicked] = useState(false);
+
+  const handleScroll = (event, targetId) => {
+    event.preventDefault();
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <nav className="navbar desktop">
@@ -14,7 +23,11 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#" className="add_fraction">
+              <a
+                href="#about"
+                className="add_fraction"
+                onClick={(e) => handleScroll(e, "about")}
+              >
                 ABOUT ME
               </a>
             </li>

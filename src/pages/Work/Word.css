@@ -1,0 +1,14 @@
+.work-section {
+  height: 100vh;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  width: auto;
+  padding-bottom: 1rem;
+  display: grid;
+  /* position: relative; */
+  overflow: visible;
+  padding: 1rem 1rem;
+}

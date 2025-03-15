@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import "../responsive.css";
-import SmoothScroll from "./components/Navbar/SmoothScroll.jsx";
+import SmoothScrolling from "./components/smoothScroll/SmoothScroll.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SmoothScroll>
+    <SmoothScrolling>
       <App />
-    </SmoothScroll>
+    </SmoothScrolling>
   </React.StrictMode>
 );

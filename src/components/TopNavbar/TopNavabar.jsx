@@ -6,7 +6,7 @@ import nameLogo from "../../assets/name_logo.png";
 function TopNavabar() {
   return (
     <div className="top_navabr desktop">
-      <img src={nameLogo} alt="" srcset="" />
+      <img src={nameLogo} alt="" srcSet="" />
       <div
         style={{
           display: "flex",

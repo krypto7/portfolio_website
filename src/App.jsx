@@ -3,6 +3,7 @@ import CreativeSection from "./components/CreativeSaection/CreativeSection";
 import Navbar from "./components/Navbar/Navbar";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Home from "./pages/Home/Home";
+import Work from "./pages/Work/Work";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <CreativeSection />
       <AboutMe />
+      <Work />
     </>
   );
 }

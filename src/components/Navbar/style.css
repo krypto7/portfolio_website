@@ -7,17 +7,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
 .navbar_container {
   display: flex;
-  /* justify-content: center; */
   padding: 3vh 4vh;
   width: 50%;
   border-radius: 30px;
-  background-color: #04130e80;
-  --webkit-backdrop-filter: blur(30px) backdrop-filter:blur(30px);
+  background-color: #04130e4f;
+  --webkit-backdrop-filter: blur(15px) backdrop-filter: blur(26px);
   border: 1px solid #ffffff1a;
+  backdrop-filter: blur(30px);
 }
 
 .navbar_container ul {

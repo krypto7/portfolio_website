@@ -9,8 +9,8 @@ function OnlineMarquee() {
           <div className="online_circle"></div>
         </div>
         <div className="online_marquee">
-          <div class="top-button_blur"></div>
-          <div class="top-button_blur is-right"></div>
+          <div className="top-button_blur"></div>
+          <div className="top-button_blur is-right"></div>
           <div className="marquee_inner">
             <p>Available for work</p>
             <p>Available for work</p>

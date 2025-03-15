@@ -23,16 +23,16 @@ function Home() {
               className="profile_img_desktop desktop"
               src={img1}
               alt="desktop-img"
-              srcset=""
+              srcSet=""
             />
             <img
               className="profile_img_mobile mobile"
               src={img2}
               alt="mobile-img"
-              srcset=""
+              srcSet=""
             />
           </div>
-          {/* <img src={img2} alt="" srcset="" /> */}
+          {/* <img src={img2} alt="" srcSet="" /> */}
         </div>
         <div className="right_container">
           <p className="intro_subText">

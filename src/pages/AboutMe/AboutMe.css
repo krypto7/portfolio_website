@@ -1,17 +1,82 @@
 .about-me {
-  height: 70vh;
+  height: 100vh;
+  /* Ensure enough scroll space */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  gap: 7rem;
 }
 
-.line {
-  height: 100%;
-  width: 1vh;
-  background-color: white;
+.highlight-line-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+  width: 3px;
+  display: flex;
+  position: relative;
+  height: 80vh;
 }
 
 .about-me li {
-  font-size: 2vh;
+  font-size: 1.5rem;
+}
+
+.about-list {
+  max-width: 70%;
+}
+
+.about-list ol {
+  display: flex;
+  /* gap: 5vh; */
+  flex-direction: column;
+}
+
+.highlight-line-blue {
+  background-image: linear-gradient(to bottom, #0000, var(--blue) 45%, #0000);
+  justify-content: center;
+  /* align-items: center; */
+  width: 1px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.highlight {
+  /* background-color: var(--blue); */
+  filter: blur(4px);
+  border-radius: 50%;
+  width: 0.1rem;
+  height: 0%;
+  position: absolute;
+  transition: height 0.3s ease-out;
+  background-image: linear-gradient(to bottom, #0000, var(--blue) 45%, #0000);
+}
+
+.about-list ol {
+  list-style: none;
+  /* Remove default markers */
+  padding-left: 0;
+}
+
+.about-list ol li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* Space between marker and text */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.176);
+  /* background-color: red; */
+  padding: 2rem 0;
+}
+
+.custom-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff1a;
+  background: #1c1e2a;
+  /* color: var(--blue); */
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .25rem;
 }
