@@ -13,7 +13,7 @@ function Home() {
     <div className="home_section">
       <TopNavabar />
       <GradientCircle className={"gradient_circle1"} />
-      <GradientCircle className={"gradient_circle2 desktop"} />
+      <GradientCircle className={"home_gradient_circle2 desktop"} />
 
       {/* -----------Home------------------- */}
       <div className="home_content">

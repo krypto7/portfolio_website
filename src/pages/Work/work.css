@@ -1,3 +1,16 @@
+.work-container p {
+  text-align: center;
+  width: 100%;
+  font-family: "Space Grotesk", serif;
+  font-size: 7rem;
+  color: #fff;
+  padding: 3vh 0px;
+}
+
+.work-container {
+  padding-top: 7vh;
+}
+
 .work-section {
   height: 100vh;
   grid-column-gap: 1.25rem;

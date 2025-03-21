@@ -8,6 +8,7 @@
   --green: #18ffb0;
   --light: #96a7a1;
   --almost-black: #051819;
+  --red: #eb0c0c;
 }
 
 * {
@@ -15,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 a:-webkit-any-link {

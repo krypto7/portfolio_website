@@ -11,35 +11,29 @@ function AboutMe() {
     "Constantly exploring new technologies and best practices to build scalable, efficient, and visually appealing digital solutions.",
   ];
 
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
+  // const containerRef = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   offset: ["start start", "end end"],
+  // });
 
   // Map scroll progress to height (0% at start, 100% at end)
-  const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <div className="about-me" ref={containerRef} id="about">
+    <div className="about-me" id="about">
       <div className="highlight-line-wrapper">
         <div className="highlight-line-blue">
-          <motion.div className="highlight" style={{ height }}></motion.div>
+          <motion.div className="highlight"></motion.div>
         </div>
       </div>
       <div className="about-list">
         <ol>
           {aboutMe.map((item, index) => (
-            <motion.li
-              key={index}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
-            >
+            <li>
               <div className="custom-marker">{index + 1}</div>
               {item}
-            </motion.li>
+            </li>
           ))}
         </ol>
       </div>
