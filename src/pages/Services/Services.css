@@ -1,0 +1,46 @@
+.service_section {
+  min-height: 100vh;
+}
+
+.service_section .title {
+  font-size: 6rem;
+  color: #ffff;
+  text-align: center;
+}
+
+.service_section .subtitle {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.services_card_container {
+  display: flex;
+}
+
+.service_card {
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  border: 1px solid #ffffff1a;
+  background-color: #595b731a;
+  border-radius: 1.25rem;
+  padding: 3.25rem;
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.service_title p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+
+.service_title p::before {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2px;
+  background-color: var(--white);
+  opacity: .3;
+}
