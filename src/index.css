@@ -24,11 +24,13 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-body {
+body,
+html {
   font-family: "DM Sans", serif;
   background-color: var(--black);
   color: var(--blue);
   scroll-behavior: smooth;
+  perspective: 800px;
 }
 
 body::-webkit-scrollbar {

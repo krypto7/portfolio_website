@@ -1,20 +1,28 @@
 .service_section {
-  min-height: 100vh;
+  background-color: #0d101c80;
+  border-top: 0.5px solid #ffffff18;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service_section .title {
   font-size: 6rem;
   color: #ffff;
   text-align: center;
+  padding-top: 4rem;
 }
 
 .service_section .subtitle {
   font-size: 1rem;
   text-align: center;
+  padding-top: 4rem;
 }
 
 .services_card_container {
   display: flex;
+  gap: 3rem;
+  padding: 4rem 2rem;
 }
 
 .service_card {
@@ -27,6 +35,14 @@
   display: flex;
   flex-direction: column;
   width: 33.33%;
+  gap: 4vh;
+  transition: all 1s ease;
+}
+
+.service_title {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
 }
 
 .service_title p {
@@ -34,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 2vh;
+  font-size: 1rem;
 }
 
 .service_title p::before {
@@ -43,4 +60,22 @@
   height: 2px;
   background-color: var(--white);
   opacity: .3;
+}
+
+.service_card .service_title h2 {
+  font-size: 3rem;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  color: var(--white);
+}
+
+.service_desc {
+  color: var(--white);
+  opacity: 0.6;
+  font-size: 2vh;
+}
+
+.service_card:hover {
+  /* background-color: red; */
+  transform: rotate3d(1, 1, 5, 5deg);
 }
