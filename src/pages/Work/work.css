@@ -9,7 +9,7 @@
 
 .work-container {
   padding-top: 7vh;
-  z-index: 20;
+  /* z-index: 20; */
   position: relative;
   background-color: #000;
 }

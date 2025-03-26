@@ -6,7 +6,7 @@
   align-items: center;
   background-color: #000;
   gap: 7rem;
-  z-index: 30;
+  /* z-index: 30; */
   position: relative;
 }
 

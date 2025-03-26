@@ -1,27 +1,28 @@
-.footer_container {
-  min-height: auto;
-  position: sticky;
-  bottom: 0;
-}
+  .footer_container {
+    min-height: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+  }
 
-.footerBanner {
-  height: 50%;
-  width: 100%;
-}
+  .footerBanner {
+    height: 50%;
+    width: 100%;
+  }
 
-.footerBanner img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
+  .footerBanner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
 
-.footer_marquee {
-  font-family: 'Space Grotesk';
-  height: 80vh;
-  overflow-y: hidden;
-}
+  .footer_marquee {
+    font-family: 'Space Grotesk';
+    height: 80vh;
+    overflow-y: hidden;
+  }
 
-.footer_marquee_items h1 {
-  font-size: 30rem;
-}
+  .footer_marquee_items h1 {
+    font-size: 30rem;
+  }
