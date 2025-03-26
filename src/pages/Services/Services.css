@@ -1,9 +1,11 @@
 .service_section {
-  background-color: #0d101c80;
   border-top: 0.5px solid #ffffff18;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 20;
+  background-color: black;
 }
 
 .service_section .title {

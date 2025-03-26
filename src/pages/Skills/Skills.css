@@ -4,6 +4,8 @@
   width: 100%;
   position: relative;
   height: 100vh;
+  z-index: 20;
+  background-color: black;
 }
 
 .service_gradient_circle {

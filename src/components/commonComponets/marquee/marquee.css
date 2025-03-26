@@ -74,6 +74,10 @@ ul {
   }
 }
 
+.enable-animation {
+  margin: 0;
+}
+
 .enable-animation .marquee__content {
   animation: scroll 30s linear infinite;
 }

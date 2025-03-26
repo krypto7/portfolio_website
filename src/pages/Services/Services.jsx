@@ -3,7 +3,7 @@ import "./Services.css";
 import CustomButtons from "../../components/CustomButtons/CustomButtons";
 import { ImWhatsapp } from "react-icons/im";
 
-function Services({ services }) {
+function Services() {
   const servicesData = [
     {
       title: "UI Design",

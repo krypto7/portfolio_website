@@ -30,6 +30,7 @@ html {
   background-color: var(--black);
   color: var(--blue);
   scroll-behavior: smooth;
+  background-color: #000000;
   perspective: 800px;
 }
 

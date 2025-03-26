@@ -4,8 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  background-color: #000;
   gap: 7rem;
+  z-index: 30;
+  position: relative;
 }
 
 .highlight-line-wrapper {
@@ -19,6 +21,7 @@
 
 .about-me li {
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .about-list {

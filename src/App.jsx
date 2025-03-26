@@ -2,6 +2,7 @@ import "./App.css";
 import CreativeSection from "./components/CreativeSaection/CreativeSection";
 import Navbar from "./components/Navbar/Navbar";
 import AboutMe from "./pages/AboutMe/AboutMe";
+import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import Skills from "./pages/Skills/Skills";
@@ -17,6 +18,7 @@ function App() {
       <Work />
       <Skills />
       <Services />
+      <Footer />
     </>
   );
 }
