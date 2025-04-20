@@ -16,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
 }
 
 a:-webkit-any-link {
@@ -29,7 +28,6 @@ html {
   font-family: "DM Sans", serif;
   background-color: var(--black);
   color: var(--blue);
-  scroll-behavior: smooth;
   background-color: #000000;
   perspective: 800px;
 }

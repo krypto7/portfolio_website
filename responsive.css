@@ -40,6 +40,7 @@
     width: 100%;
     right: -100%;
     transition: right 0.5s ease;
+    display: none;
   }
 
   .nav_mobile_menu ul {
@@ -167,5 +168,9 @@
 
   .service_container {
     overflow: hidden;
+  }
+
+  .service_section {
+    display: nonegit ;
   }
 }
